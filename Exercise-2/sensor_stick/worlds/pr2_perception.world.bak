@@ -751,21 +751,21 @@
         <scale>1 1 1</scale>
         <link name='base'>
           <pose frame=''>0.561239 -0.063135 0.775935 8.2e-05 -0.0005 0.269434</pose>
-          <velocity>0 0 0 0 0 0</velocity>
-          <acceleration>0 0 0 0 0 0</acceleration>
-          <wrench>0 0 0 0 0 0</wrench>
+          <velocity>0.001848 0.001218 -0.001019 0.027443 0.000969 0.023679</velocity>
+          <acceleration>0.011626 -0.041176 -0.379223 2.22176 0.646278 0.026074</acceleration>
+          <wrench>0.025973 -0.091988 -0.847183 0 -0 0</wrench>
         </link>
         <link name='left_wheel'>
           <pose frame=''>0.526621 0.062165 0.808007 3.1415 0.264484 -2.87218</pose>
-          <velocity>0 0 0 0 0 0</velocity>
-          <acceleration>0 0 0 0 0 0</acceleration>
-          <wrench>0 0 0 0 0 0</wrench>
+          <velocity>-0.00089 -0.00119 0.015265 0.038775 -0.034763 0.023677</velocity>
+          <acceleration>0.402372 -1.44297 30.8272 -1.32323 0.944398 0.004164</acceleration>
+          <wrench>0.004024 -0.01443 0.308272 0 -0 0</wrench>
         </link>
         <link name='right_wheel'>
           <pose frame=''>0.595828 -0.188449 0.807988 3.14143 -1.00346 -2.87202</pose>
-          <velocity>0 0 0 0 0 0</velocity>
-          <acceleration>0 0 0 0 0 0</acceleration>
-          <wrench>0 0 0 0 0 0</wrench>
+          <velocity>0.005017 0.00054 -0.020294 -0.01436 0.144006 0.023689</velocity>
+          <acceleration>0.379616 -1.3721 -39.3244 -2.11388 -1.00551 0.000361</acceleration>
+          <wrench>0.003796 -0.013721 -0.393244 0 -0 0</wrench>
         </link>
       </model>
       <model name='disk_part'>
@@ -774,8 +774,8 @@
         <link name='link'>
           <pose frame=''>-0.699973 0.100026 0.774994 -2.7e-05 -2.4e-05 -2.8e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 0 0</acceleration>
-          <wrench>0 0 0 0 0 0</wrench>
+          <acceleration>-0.907441 1.06282 -7.5647 1.71542 -0.733494 -0.202279</acceleration>
+          <wrench>-0.453721 0.531412 -3.78235 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
