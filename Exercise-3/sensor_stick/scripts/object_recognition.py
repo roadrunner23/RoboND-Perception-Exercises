@@ -176,7 +176,9 @@ if __name__ == '__main__':
     clf = model['classifier']
     encoder = LabelEncoder()
     encoder.classes_ = model['classes']
-    scaler = model['scaler']    # Initialize color_list
+    scaler = model['scaler']    
+
+    # Initialize color_list
     get_color_list.color_list = []
 
     # TODO: Spin while node is not shutdown
