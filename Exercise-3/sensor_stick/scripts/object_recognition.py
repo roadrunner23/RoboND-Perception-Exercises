@@ -128,7 +128,7 @@ def pcl_callback(pcl_msg):
     for index, pts_list in enumerate(cluster_indices):
         # Grab the points for the cluster
         pcl_cluster = extracted_outliers.extract(pts_list)
-	ros_cluster = pcl_to_ros(pcl_cluster)
+        ros_cluster = pcl_to_ros(pcl_cluster)
 
         # Compute the associated feature vector
         chists = compute_color_histograms(ros_cluster, using_hsv=True)
@@ -137,17 +137,17 @@ def pcl_callback(pcl_msg):
         feature = np.concatenate((chists, nhists))
 
         # Make the prediction
-	prediction = clf.predict(scaler.transform(feature.reshape(1,-1)))
+        prediction = clf.predict(scaler.transform(feature.reshape(1,-1)))
         label = encoder.inverse_transform(prediction)[0]
         detected_objects_labels.append(label)
 
         # Publish a label into RViz
-	label_pos = list(white_cloud[pts_list[0]])
+        label_pos = list(white_cloud[pts_list[0]])
         label_pos[2] += .4
         object_markers_pub.publish(make_label(label,label_pos, index)) 
 
         # Add the detected object to the list of detected objects.
-	do = DetectedObject()
+        do = DetectedObject()
         do.label = label
         do.cloud = ros_cluster
         detected_objects.append(do)
@@ -181,4 +181,4 @@ if __name__ == '__main__':
 
     # TODO: Spin while node is not shutdown
     while not rospy.is_shutdown():
-	rospy.spin()
+        rospy.spin()
